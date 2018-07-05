@@ -436,6 +436,7 @@ public enum PackageMode: String, StringEnumArgument {
     case dumpPackage = "dump-package"
     case edit
     case fetch
+    case generateCMake = "generate-cmake"
     case generateXcodeproj = "generate-xcodeproj"
     case completionTool = "completion-tool"
     case initPackage = "init"

@@ -35,6 +35,7 @@ let package = Package(
                 "PackageLoading",
                 "PackageGraph",
                 "Build",
+                "CMake",
                 "Xcodeproj",
                 "Workspace"
             ]
@@ -122,6 +123,10 @@ let package = Package(
         .target(
             /** Generates Xcode projects */
             name: "Xcodeproj",
+            dependencies: ["Basic", "PackageGraph"]),
+        .target(
+            /** Generates CMake projects */
+            name: "CMake",
             dependencies: ["Basic", "PackageGraph"]),
         .target(
             /** High level functionality */
